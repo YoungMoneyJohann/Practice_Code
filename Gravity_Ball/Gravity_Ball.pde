@@ -9,6 +9,8 @@ float ax;
 float ay;
 float sz;
 
+float f;
+
 void setup() {
   size(500, 500);
   x[count-1] = width/2;
@@ -18,6 +20,7 @@ void setup() {
   ax = 0;
   ay = .01;
   sz = count*2+10;
+  f = .97;
 }
 
 void draw() {
@@ -38,7 +41,7 @@ void draw() {
 
   if (y[count-1]+sz/2>height) {
     y[count-1]=height-sz/2;
-    dy=-abs(dy);
+    dy=-abs(dy)*f;
   }
   if (x[count-1]-sz/2<0 || x[count-1]+sz/2>width) {
     dx*=-1;
