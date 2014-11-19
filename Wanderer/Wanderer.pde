@@ -68,16 +68,16 @@ void updatePlayers() {
 
   //ARROW KEY INPUT
   if (keys[UP]) {
-    a.y=-0.05;
+    a.y=-0.1;
   } 
   if (keys[DOWN]) {
-    a.y=0.05;
+    a.y=0.1;
   } 
   if (keys[LEFT]) {
-    a.x=-0.05;
+    a.x=-0.1;
   } 
   if (keys[RIGHT]) {
-    a.x=0.05;
+    a.x=0.1;
   }
 
 }
